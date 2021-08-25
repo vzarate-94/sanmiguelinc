@@ -14,7 +14,7 @@
 <section class="card-container">
   {% for rooftop in rooftops %}
     <div class="card">
-    <a href="/rooftops/{{ rooftop.id }}">
+    <a href="{% url 'rooftops_details' rooftop.id %}">
       <div class="card-content">
         <div class="card-img-container">
         </div>
