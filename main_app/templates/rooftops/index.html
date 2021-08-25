@@ -14,12 +14,14 @@
 <section class="card-container">
   {% for rooftop in rooftops %}
     <div class="card">
+    <a href="/rooftops/{{ rooftop.id }}">
       <div class="card-content">
         <div class="card-img-container">
         </div>
         <h2 class="card-title">{{ rooftop.name }}</h2>
         <p><small>{{ rooftop.description }}</small></p>
       </div>
+      </a>
     </div>
   {% endfor %}
 </section>
