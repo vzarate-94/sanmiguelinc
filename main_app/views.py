@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Rooftop
 
 # Create your views here.
@@ -16,3 +18,17 @@ def rooftops_index(request):
 def rooftops_detail(request, rooftop_id):
   rooftop = Rooftop.objects.get(id=rooftop_id)
   return render(request, 'rooftops/detail.html', { 'rooftop': rooftop })
+
+class RooftopCreate(CreateView):
+  model = Rooftop
+  fields = '__all__'
+  success_url = '/rooftops/'
+
+class RooftopUpdate(UpdateView):
+  model = Rooftop
+  # Let's disallow the renaming of a Rooftop by excluding the name field!
+  fields = ['breed', 'description', 'age']
+
+class RooftopDelete(DeleteView):
+  model = Rooftop
+  success_url = '/rooftops/'

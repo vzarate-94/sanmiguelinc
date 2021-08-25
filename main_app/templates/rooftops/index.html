@@ -14,7 +14,7 @@
 <section class="card-container">
   {% for rooftop in rooftops %}
     <div class="card">
-    <a href="{% url 'rooftops_details' rooftop.id %}">
+    <a href="{% url 'rooftops_detail' rooftop.id %}">
       <div class="card-content">
         <div class="card-img-container">
         </div>
@@ -25,5 +25,6 @@
     </div>
   {% endfor %}
 </section>
+<a href="{% url 'rooftops_create' %}">*Add your favorite San Miguel Rooftop!</a>
 
 {% endblock %}
