@@ -27,7 +27,7 @@ class RooftopCreate(CreateView):
 class RooftopUpdate(UpdateView):
   model = Rooftop
   # Let's disallow the renaming of a Rooftop by excluding the name field!
-  fields = ['breed', 'description', 'age']
+  fields = ['name', 'description', 'price']
 
 class RooftopDelete(DeleteView):
   model = Rooftop
