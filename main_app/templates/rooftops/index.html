@@ -17,7 +17,19 @@
     <a href="{% url 'rooftops_detail' rooftop.id %}">
       <div class="card-content">
         <div class="card-img-container">
-        </div>
+            {% if rooftop.photo.url %}
+              <img 
+                src="{{rooftop.photo.url}}" 
+                alt="A photo of {{rooftop.name}}"
+                class="usr-img"
+              >
+            {% else %}
+              <img 
+                src="{% static 'images/sk8r-boi-rooftop.svg' %}" 
+                alt="A skater boy rooftop"
+              >
+            {% endif %}
+          </div>
         <h2 class="card-title">{{ rooftop.name }}</h2>
         <p><small>{{ rooftop.description }}</small></p>
       </div>
