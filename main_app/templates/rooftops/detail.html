@@ -5,7 +5,7 @@
 <link 
   rel="stylesheet" 
   type="text/css" 
-  href="{% static 'css/rooftop-detail.css' %}"
+  href="{% static 'css/rooftop-details.css' %}"
 />
 {% endblock %}
 
@@ -13,15 +13,42 @@
 
 <section class="rooftop-container">
   <div class="rooftop-img">
+  {% if rooftop.photo.url %}
+      <img 
+        src="{{rooftop.photo.url}}" 
+        alt="A photo of {{rooftop.name}}"
+        class="usr-img"
+      >
+    {% else %}
+      <img 
+        src="{% static 'images/sk8r-boi-rooftop.svg' %}" 
+        alt="A skater boy rooftop"
+      >
+    {% endif %}
+
   </div>
   <div class="rooftop-details">
     <h1>{{ rooftop.name }}</h1>
       <h4>Price scale 1-5: {{ rooftop.price }} </h4>
     <p>{{ rooftop.description }}</p>
-    <div class="cat-actions">
+    <div class="rooftop-actions">
       <a href="{% url 'rooftops_update' rooftop.id %}" class="btn warn">Edit</a>
       <a href="{% url 'rooftops_delete' rooftop.id %}" class="btn danger">Delete</a>
     </div>
+    <h3>Change {{ rooftop.name }}'s photo</h3>
+    <p id="file-name"></p>
+    <form 
+      action="{% url 'add_photo' rooftop.id %}"
+      enctype="multipart/form-data"
+      method="POST"
+    >
+      {% csrf_token %}
+      <label class="btn secondary">
+        Choose photo
+        <input type="file" name="photo-file" id="file-input">
+      </label>
+      <button type="submit" class="btn submit">Upload Photo</button>
+    </form>
   </div>
 </section>
 

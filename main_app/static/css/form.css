@@ -23,9 +23,10 @@ td {
 }
 
 td > * {
-  width: 100%;
+  width: 50%;
   padding: 2px 4px;
   font-size: var(--font-l);
+  border: 2px solid maroon;
 }
 
 td > textarea {

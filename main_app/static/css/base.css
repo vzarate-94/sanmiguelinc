@@ -88,6 +88,10 @@ nav li {
   padding: 5px 8px;
 }
 
+.main-about-header {
+  background-color: maroon;
+}
+
 .header-logo-container {
   margin: auto;
   padding: 10px 20px 0;
@@ -151,6 +155,8 @@ nav li {
 .page-header img:first-of-type {
   margin-left: 20px;
 }
+
+
 
 @media only screen and (min-width: 768px) {
   header {

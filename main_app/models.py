@@ -12,3 +12,10 @@ class Rooftop(models.Model):
 
   def get_absolute_url(self):
     return reverse('rooftops_detail', kwargs={'rooftop_id': self.id})
+  
+class Photo(models.Model):
+  url = models.CharField(max_length=250)
+  rooftop = models.OneToOneField(Rooftop, on_delete=models.CASCADE)
+
+  def __str__(self):
+    return f"Photo for rooftop_id: {self.rooftop_id} @{self.url}"
