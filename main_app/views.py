@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.contrib.auth.views import LoginView
 from .models import Rooftop, Photo
 import uuid
 import boto3
@@ -15,6 +16,8 @@ def home(request):
 def about(request):
   return render(request, 'about.html')
 
+class Login(LoginView):
+  template_name = 'login.html'
 
 def rooftops_index(request):
   rooftops = Rooftop.objects.all()
