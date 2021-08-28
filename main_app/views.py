@@ -16,7 +16,7 @@ def home(request):
 def about(request):
   return render(request, 'about.html')
 
-class login(LoginView):
+class Login(LoginView):
   template_name = 'login.html'
 
 def rooftops_index(request):
