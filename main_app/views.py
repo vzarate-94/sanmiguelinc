@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
-from django.views.generic.edit import CreateView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import LoginView
+from django.contrib.auth import login
+from django.contrib.auth.forms import UserCreationForm
 from .models import Rooftop, Photo
 import uuid
 import boto3
@@ -61,3 +62,20 @@ def add_photo(request, rooftop_id):
     except Exception as err:
       print('An error occurred uploading file to S3: %s' % err)
   return redirect('rooftops_detail', rooftop_id=rooftop_id)
+
+def signup(request):
+  error_message = ''
+  if request.method == 'POST':
+    form = UserCreationForm(request.POST)
+    if form.is_valid():
+      # This will add the user to the database
+      user = form.save()
+      # This is how we log a user in
+      login(request, user)
+      return redirect('rooftops_index')
+    else:
+      error_message = 'Invalid sign up - try again'
+  # A bad POST or a GET request, so render signup.html with an empty form
+  form = UserCreationForm()
+  context = {'form': form, 'error_message': error_message}
+  return render(request, 'signup.html', context)
