@@ -20,6 +20,7 @@
 .usr-img {
   width: 100%;
   border-radius: var(--card-border-radius);
+  padding-left: -10px;
 }
 
 .card > a {
