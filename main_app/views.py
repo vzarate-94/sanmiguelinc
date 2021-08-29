@@ -4,6 +4,7 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Rooftop, Photo
 import uuid
 import boto3
@@ -29,7 +30,7 @@ def rooftops_detail(request, rooftop_id):
   rooftop = Rooftop.objects.get(id=rooftop_id)
   return render(request, 'rooftops/detail.html', { 'rooftop': rooftop })
 
-class RooftopCreate(CreateView):
+class RooftopCreate(LoginRequiredMixin, CreateView):
   model = Rooftop
   fields = ['name', 'description', 'price']
   success_url = '/rooftops/'
@@ -38,12 +39,12 @@ class RooftopCreate(CreateView):
     form.instance.user = self.request.user
     return super().form_valid(form)
 
-class RooftopUpdate(UpdateView):
+class RooftopUpdate(LoginRequiredMixin, UpdateView):
   model = Rooftop
   # Let's disallow the renaming of a Rooftop by excluding the name field!
   fields = ['name', 'description', 'price']
 
-class RooftopDelete(DeleteView):
+class RooftopDelete(LoginRequiredMixin, DeleteView):
   model = Rooftop
   success_url = '/rooftops/'
 
