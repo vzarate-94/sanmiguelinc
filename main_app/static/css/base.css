@@ -1,4 +1,4 @@
-tml {
+html {
   box-sizing: border-box
 }
 
@@ -48,7 +48,7 @@ body {
 
 header {
   width: 100%;
-  background: rgba(255, 119, 0, 0.886);
+  background: rgba(227, 106, 0, 0.742);
   border-bottom: maroon;
 }
 

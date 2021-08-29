@@ -12,6 +12,7 @@ table {
 
 th {
   text-align: left;
+  margin: 10px;
   padding: 6px 20px 0 0;
   font-weight: normal;
   vertical-align: top;
@@ -34,7 +35,6 @@ td > textarea {
   font-family: inherit;
 }
 
-.btn {
-  align-self: flex-end;
-  margin-right: 40px;
+.submit {
+  align-self: flex-start;
 }
