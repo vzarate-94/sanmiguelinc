@@ -47,6 +47,7 @@ class RooftopDelete(DeleteView):
   model = Rooftop
   success_url = '/rooftops/'
 
+@login_required
 def add_photo(request, rooftop_id):
   photo_file = request.FILES.get('photo-file', None)
   if photo_file:

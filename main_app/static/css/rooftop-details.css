@@ -1,5 +1,6 @@
 
 .rooftop-container {
+  margin-top: 20px;
   padding: 35px 30px;
   display: flex;
   flex-direction: column;
@@ -9,7 +10,7 @@
 }
 
 .rooftop-img {
-  width: 75%;
+  width: 85%;
   max-width: 350px;
 }
 
@@ -19,7 +20,8 @@
 }
 
 .rooftop-details {
-  width: 98%;
+  padding-top: 10px;
+  width: 50%;
 }
 
 .rooftop-actions {
