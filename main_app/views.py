@@ -29,8 +29,12 @@ def rooftops_detail(request, rooftop_id):
 
 class RooftopCreate(CreateView):
   model = Rooftop
-  fields = '__all__'
+  fields = ['name', 'description', 'price']
   success_url = '/rooftops/'
+
+  def form_valid(self, form):
+    form.instance.user = self.request.user
+    return super().form_valid(form)
 
 class RooftopUpdate(UpdateView):
   model = Rooftop
