@@ -1,12 +1,21 @@
-# [WE! Travel](https://we-travel.herokuapp.com/)
+# [San Miguel INC](https://sanmiguelinc.herokuapp.com/)
 
-WE! makes it easy to see all of your travel information in one place. See your budget, checklists, and travel schedule all in one, convenient place.
+I have the pleasure of being from a beautiful town in Mexico called San Miguel de Allende! I am biased in saying its one of the coolest places in the world. 
 
-> ### "***Most travel websites are optimized for conversion, not planning.***" - AskWonder
+> ### "***2018 Best city in the world***" - Travel + Leisure
 
 ## Background
 
-Did you know U.S. travelers visit over 140 sites on average when planning a trip. According to [AskWonder](https://askwonder.com/research/biggest-problems-modern-day-travel-planning-riunb1y6i), “most travel websites are optimized for conversion, not for planning and even then, tools for saving for later, sharing, and comparing are generally not there.”
+San Miguel de Allende and its colonial structures were disctovered in the mid 20th century. San Miguel quickly became home to many foriegn artists from all over the world. Its population at one point was 40% foriegnors from mainly USA, Canada, and Europe. 
+
+San Miguel has continued to grow into an awesome town filled with the coolest personalities. 
+
+## Notable people who live/lived in San miguel!
+
+1. Eva Longoria
+2. Antonio Banderas
+3. Elizabeth Banks
+4. Our very own John Nelson-Alden!
 
 ### The WE! Travel Team
 
