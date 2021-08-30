@@ -4,11 +4,11 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 EXPENSIVE = (
-  (1, 'Very Expensive'),
-  (2, 'Expensive'),
+  (1, 'Very Affordable'),
+  (2, 'Affordable'),
   (3, 'Average'),
-  (4, 'Afordable'),
-  (5, 'Very Affordable')
+  (4, 'Expensive'),
+  (5, 'Very Expensive')
 )
 
 class Rooftop(models.Model):

@@ -21,8 +21,9 @@
       >
     {% else %}
       <img 
-        src="{% static 'images/sk8r-boi-rooftop.svg' %}" 
-        alt="A skater boy rooftop"
+        src="{% static 'images/San-miguel.jpg' %}" 
+        alt="A san miguel rooftop"
+        class="usr-img"
       >
     {% endif %}
 
@@ -30,7 +31,7 @@
   {% if user.is_authenticated %}
   <div class="rooftop-details">
     <h1>{{ rooftop.name }}</h1>
-      <h4>Price scale 1-5 (1 Most Expensive):  {{ rooftop.price }} </h4>
+      <h4>Price scale 1-5 (5 Most Expensive):  {{ rooftop.price }} </h4>
     <p>{{ rooftop.description }}</p>
     <div class="rooftop-actions">
       <a href="{% url 'rooftops_update' rooftop.id %}" class="btn warn">Edit</a>
@@ -54,7 +55,7 @@
   {% else %}
   <div class="rooftop-details">
     <h1>{{ rooftop.name }}</h1>
-      <h4>Price scale 1-5 (1 Most Expensive): {{ rooftop.price }} </h4>
+      <h4>Price scale 1-5 (5 Most Expensive): {{ rooftop.price }} </h4>
     <p>{{ rooftop.description }}</p>
   </div>
   {% endif %}
