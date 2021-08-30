@@ -48,7 +48,7 @@ body {
 
 header {
   width: 100%;
-  background: rgba(227, 106, 0, 0.742);
+  background: maroon;
   border-bottom: maroon;
 }
 
@@ -111,7 +111,7 @@ nav li {
   border-width: 2px;
   border-style: solid;
   text-decoration: none;
-  background-color: var(--button-bg);
+  background-color: maroon;
   font-weight: 600;
   cursor: pointer;
   font-family: inherit;
@@ -119,18 +119,18 @@ nav li {
 }
 
 .btn:hover {
-  background-color: var(--button-bg-hover);
+  background-color: maroon;
 }
 
 .submit {
-  color: var(--submit);
-  border-color: var(--submit);
+  color: whitesmoke;
+  border-color: maroon;
+  align-items: center;
 }
 
 .secondary {
-  color: var(--secondary);
-  border-color: var(--secondary);
-}
+  color: whitesmoke;
+  border-color: maroon;}
 
 .warn {
   color: var(--warn);
