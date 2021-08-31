@@ -1,4 +1,4 @@
-# [San Miguel INC](https://sanmiguelinc.herokuapp.com/)
+# [San Miguel INC](https://sanmiguelinc.herokuapp.com)
 
 I have the pleasure of being from a beautiful town in Mexico called San Miguel de Allende! I am biased in saying its one of the coolest places in the world. 
 
@@ -6,9 +6,7 @@ I have the pleasure of being from a beautiful town in Mexico called San Miguel d
 
 ## Background
 
-San Miguel de Allende and its colonial structures were disctovered in the mid 20th century. San Miguel quickly became home to many foriegn artists from all over the world. Its population at one point was 40% foriegnors from mainly USA, Canada, and Europe. 
-
-San Miguel has continued to grow into an awesome town filled with the coolest personalities. 
+San Miguel de Allende and its colonial structures were disctovered in the mid 20th century. San Miguel quickly became home to many foriegn artists from all over the world. Its population at one point was 40% foriegnors from mainly USA, Canada, and Europe. Now a UNESCO World Heritage site, San Miguel has continued to grow into an awesome town filled with the coolest personalities. 
 
 ## Notable people who live/lived in San miguel!
 
@@ -17,19 +15,20 @@ San Miguel has continued to grow into an awesome town filled with the coolest pe
 3. Elizabeth Banks
 4. Our very own John Nelson-Alden!
 
-### The WE! Travel Team
+### About San Miguel INC
 
-![The WE! Travel Team](src/assets/images/README/WE!%20Travel%20Team.jpg)
+There are countless articles and videos out on the internet that will convince you to travel there. San Miguel INC is made exclusively to inform you on some of the best places to spend your time while there, and there's nothing better than a good rooftop bar!
 
 ## Getting Started
 
-1. [Launch the app](https://we-travel.herokuapp.com/)
-2. Sign up
-3. Browse interesting locations and start a trip plan
+1. [Launch the app](https://sanmiguelinc.herokuapp.com/)
+2. Browse Home page
+3. Browse the Rooftops to get excited for your upcoming trip
+4. Learn more about San Miguel INC in the About page!
 
 ## Screenshots
 
-![Checklist iPhone](src/assets/images/README/products_screenshots/checklist-iphone.png)
+![Checklist iPhone](main_app/static/images/San-miguel.jpg)
 ![Trip iPhone](src/assets/images/README/products_screenshots/trip-iphone.png)
 ![Home iPad](src/assets/images/README/products_screenshots/home-ipad.png)
 ![Trips iPad](src/assets/images/README/products_screenshots/trips-ipad.png)
@@ -51,10 +50,9 @@ For a full list of dependencies please view the [package.json](package.json).
 
 ## Next Steps
 
-- Local weather forecast
-- Add friends and groups
-- Vote on activities
-- In-app chat
-- View currency exchange rate
+- Add a boutique shop seciton
+- Add comments
+- Add a Like button with functionality to put the most liked post to the top
+- Add local favorites that sometimes are not as nice as the main establishments but equally as fun!
 
 For a full list of icebox features, check out the [Trello project board](https://trello.com/b/npFmpR9q/ga-sei-unit-3-project-we-travel).
