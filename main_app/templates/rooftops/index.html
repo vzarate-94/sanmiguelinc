@@ -38,6 +38,8 @@
     </div>
   {% endfor %}
 </section>
-<a href="{% url 'rooftops_create' %}">*Add your favorite San Miguel Rooftop!</a>
+{% if user.is_authenticated %}
+<a href="{% url 'rooftops_create' %}" class="add-rooftop">*Add your favorite San Miguel Rooftop!</a>
+{% endif %}
 
 {% endblock %}
