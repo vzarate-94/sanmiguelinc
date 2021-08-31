@@ -29,7 +29,8 @@ td > * {
   padding: 2px 4px;
   font-size: var(--font-l);
   border: 2px solid maroon;
-  margin: 5px;
+  margin-top: 10px;
+  padding: 10px;
 }
 
 td > textarea {
@@ -38,5 +39,5 @@ td > textarea {
 }
 
 .submit {
-  align-self: flex-start;
+  align-self: center;
 }

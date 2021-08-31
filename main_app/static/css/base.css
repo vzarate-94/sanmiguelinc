@@ -19,6 +19,7 @@ html {
 
 body {
   margin: 0;
+  color: maroon;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,17 +27,6 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   min-height: 100vh;
-  --nav-bg: rgba(104, 197, 248, .7);
-  --nav-bg-ff: rgba(104, 197, 248, .9);
-  --borders: rgb(36, 116, 248) solid 2px;
-  --text-color: rgb(17, 20, 17);
-  --link-hover-color: rgb(16, 56, 158);
-  --button-bg: rgb(245, 245, 245);
-  --button-bg-hover: rgb(226, 226, 226);
-  --submit: rgb(26, 128, 0);
-  --warn: rgb(255, 102, 0);
-  --danger: rgb(220, 20, 30);
-  --secondary: rgb(57, 57, 57);
   --card-box-shadow: 5px 5px 6px -1px #AAA;
   --font-xtreme: 4.2rem;
   --font-xxl: 3.6rem;
@@ -68,13 +58,13 @@ main {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
   font-weight: 600;
   font-size: 16px;
 }
 
 nav a:hover {
-  color: maroon;
+  color: black;
 }
 
 nav ul {
@@ -89,7 +79,7 @@ nav li {
 }
 
 .main-about-header {
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .header-logo-container {
@@ -106,6 +96,7 @@ nav li {
 
 .btn {
   font-size: var(--font-l);
+  color: whitesmoke;
   padding: 8px 16px;
   border-radius: 6px;
   border-width: 2px;
@@ -133,13 +124,13 @@ nav li {
   border-color: maroon;}
 
 .warn {
-  color: var(--warn);
-  border-color: var(--warn);
+  color: whitesmoke;
+  border-color: maroon;
 }
 
 .danger {
-  color: var(--danger);
-  border-color: var(--danger);
+  color: whitesmoke;
+  border-color: maroon;
 }
 
 .page-header h1 {
@@ -154,6 +145,31 @@ nav li {
 
 .page-header img:first-of-type {
   margin-left: 20px;
+}
+
+.trip-img {
+  width: 30%;
+  height: 25%;
+  margin: 20px;
+  border: 2px solid maroon;
+}
+
+.family-img {
+  width: 25%;
+  height: 20%;
+  border: 2px solid maroon;
+}
+.family-img2 {
+  width: 40%;
+  height: 30%;
+  border: 2px solid maroon;
+}
+
+.aldame-img{
+  width: 90%;
+  height: 80%;
+  border: 2px solid maroon;
+  margin-left: 70px;
 }
 
 
@@ -212,7 +228,8 @@ nav li {
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     header {
-      background: orange;
+      color: whitesmoke;
+      background: maroon;
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
     }
@@ -236,7 +253,8 @@ nav li {
   nav,
   .header-logo-container {
     margin: 0;
-    background: orange;
+    color: whitesmoke;
+    background: maroon;
     border: var(--borders);
     border-radius: 18px;
   }
@@ -260,7 +278,8 @@ nav li {
 
     nav,
     .header-logo-container {
-      background: orange;
+      color: whitesmoke;
+      background: maroon;
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
     }
