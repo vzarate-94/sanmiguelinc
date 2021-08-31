@@ -47,7 +47,7 @@ There are countless articles and videos out on the internet that will convince y
 
 ## Next Steps
 
-- Add a boutique shop seciton
+- Add a boutique shop section
 - Add comments
 - Add a Like button with functionality to put the most liked post to the top
 - Add local favorites that sometimes are not as nice as the main establishments but equally as fun!
