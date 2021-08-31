@@ -29,6 +29,8 @@ There are countless articles and videos out on the internet that will convince y
 ## Screenshots
 
 ![Picture of San Miguel](main_app/static/images/San-miguel.jpg)
+![Home page](main_app/static/images/Screen%20Shot%202021-08-30%20at%208.32.01%20PM.png)
+![Rooftop page](main_app/static/images/Screen%20Shot%202021-08-30%20at%208.32.50%20PM.png)
 
 
 ## Technologies Used
