@@ -28,25 +28,20 @@ There are countless articles and videos out on the internet that will convince y
 
 ## Screenshots
 
-![Checklist iPhone](main_app/static/images/San-miguel.jpg)
-![Trip iPhone](src/assets/images/README/products_screenshots/trip-iphone.png)
-![Home iPad](src/assets/images/README/products_screenshots/home-ipad.png)
-![Trips iPad](src/assets/images/README/products_screenshots/trips-ipad.png)
+![Picture of San Miguel](main_app/static/images/San-miguel.jpg)
+
 
 ## Technologies Used
 
-- [React](https://reactjs.org/)
+- Python
 - JavaScript
 - HTML
 - CSS
-- [MongoDB](https://www.mongodb.com)/[Mongoose](https://mongoosejs.com/docs/)
-- [Node.js](https://nodejs.org/en/)/[Express](https://expressjs.com/)
-- [Unsplash API](https://unsplash.com/developers)
-- [REST Countries API](https://restcountries.eu/)
-- [dateformat](https://www.npmjs.com/package/dateformat)
-- [bcrypt](https://www.npmjs.com/package/bcrypt)
+- AWS
+- Django
+- PostgrSQL
 
-For a full list of dependencies please view the [package.json](package.json).
+
 
 ## Next Steps
 
@@ -55,4 +50,4 @@ For a full list of dependencies please view the [package.json](package.json).
 - Add a Like button with functionality to put the most liked post to the top
 - Add local favorites that sometimes are not as nice as the main establishments but equally as fun!
 
-For a full list of icebox features, check out the [Trello project board](https://trello.com/b/npFmpR9q/ga-sei-unit-3-project-we-travel).
+For a full list of icebox features, check out the [Trello project board](https://trello.com/b/OQMe5K2Z/san-miguel-inc).

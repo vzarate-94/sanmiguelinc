@@ -15,6 +15,7 @@
     {{ form.as_p }}
     <input type="hidden" name="next" value="{{ next }}">
     <button type="submit" class="btn submit">Login</button>
+    <h2>Don't have an account? <a href="{% url 'signup' %}">Sign Up</a></h2>
   </form>
 </section>
 {% endif %}
