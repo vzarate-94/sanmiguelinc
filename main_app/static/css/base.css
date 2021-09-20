@@ -38,8 +38,8 @@ body {
 
 header {
   width: 100%;
-  background: maroon;
-  border-bottom: black;
+  background: rgb(191, 0, 0);
+  border-bottom: rgb(26, 0, 0);
 }
 
 nav {
